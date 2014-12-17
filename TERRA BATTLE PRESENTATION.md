@@ -2,7 +2,6 @@
 **鄭直**
 **Zhi Zheng**
 **LEAVESZJ**
-会社のパソコンで見る（ネットワーク環境が必要）
 ![logo.png](http://i.imgur.com/ZHCEJ3R.png)
 <br>
 <br>
@@ -218,6 +217,9 @@ http://www.terra-battle.com/jp/downloadstarter/
 <br>
 ![chara_parameter_3.PNG](http://i.imgur.com/tNIFgaG.png)
 <br>
+- キャラクター属性
+![attribute.PNG](http://i.imgur.com/h7QLypn.png)
+<br>
 - キャラクタープロフィール
 ![chara_profile_1.PNG](http://i.imgur.com/gCwjvlz.png)
 <br>
@@ -231,10 +233,14 @@ http://www.terra-battle.com/jp/downloadstarter/
 - デイリーイベント
 ![daily_event.PNG](http://i.imgur.com/sU9ONdI.png)
 <br>
+![daily_event_schedule.PNG](http://i.imgur.com/2GRQWms.png)
+<br>
 - イベント
 ![event.PNG](http://i.imgur.com/turmF4x.png)
+<br>
+- カプセル
+![capsule.PNG](http://i.imgur.com/20c1LfR.png) 
 
-![](http://www.terra-battle.com/assets/terra-battle/img/chara_world02.png)
 <br>
 <br>
 <br>
