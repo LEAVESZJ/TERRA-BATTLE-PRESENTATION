@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TERRA BATTLE PRESENTATION</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #60495C;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #273065;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #FFF;
+  text-shadow: 
+		1px -1px 5px #324371,
+		1px 0px 5px #324371,
+		0px 1px 5px #324371,
+		-1px 1px 5px #324371;
+}
+
+h3 {
+  font-size: 18px;
+  color: #486790;
+  text-shadow: 0px 0px 1px #486790;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p><strong>2014/12/18</strong><br><strong>鄭直</strong><br><strong>Zhi Zheng</strong><br><strong>LEAVESZJ</strong><br><img src="http://i.imgur.com/ZHCEJ3R.png" alt="logo.png"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h2 id="agenda">Agenda</h2>
+<ul>
+<li>ゲーム紹介</li>
+<li>制作陣</li>
+<li>ゲーム開発裏話</li>
+<li>今後の展開</li>
+<li>シークレットビデオ</li>
+</ul>
+<p><img src="http://www.terra-battle.com/assets/terra-battle/img/bg_download.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h2 id="-">ゲーム紹介</h2>
+<h3 id="-">ダウンロード状況</h3>
+<ul>
+<li><strong>2014.10.09</strong>　<strong>配信開始</strong><br><img src="http://www.terra-battle.com/news/assets_c/2014/10/TB_10_9_JP-thumb-autox640-816.jpg" alt=""></li>
+<li><strong>2014.10.11</strong>　<strong>10万</strong>ダウンロード達成</li>
+<li><strong>2014.10.12</strong>　<strong>20万</strong>ダウンロード達成</li>
+<li><strong>2014.10.13</strong>　<strong>30万</strong>ダウンロード達成</li>
+<li><strong>2014.10.14</strong>　<strong>40万</strong>ダウンロード達成</li>
+<li><strong>2014.10.15</strong>　<strong>50万</strong>ダウンロード達成</li>
+<li><strong>2014.10.16</strong>　<strong>60万</strong>ダウンロード達成</li>
+<li><strong>2014.10.17</strong>　<strong>70万</strong>ダウンロード達成</li>
+<li><strong>2014.10.20</strong>　<strong>80万</strong>ダウンロード達成</li>
+<li><strong>2014.10.24</strong>　<strong>90万</strong>ダウンロード達成</li>
+<li><strong>2014.10.30</strong>　<strong>100万</strong>ダウンロード達成</li>
+<li><strong>2014.11.11</strong>　<strong>110万</strong>ダウンロード達成</li>
+<li><strong>2014.11.25</strong>　<strong>120万</strong>ダウンロード達成</li>
+<li><strong>2014.12.09</strong>　<strong>130万</strong>ダウンロード達成<br><img src="http://www.terra-battle.com/TopPageContents/TopPageContents/character_pc.png" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+<h3 id="best-of-2014">BEST OF 2014</h3>
+<ul>
+<li>App Store<br><img src="http://i.imgur.com/znW3vYb.png" alt="app_store_best_of_2014.png"><br><img src="http://i.imgur.com/wXpiITA.png" alt="app_store_terra_battle_icon.png"><br><br></li>
+<li>Google Play<br><img src="http://i.imgur.com/W02uDxu.png" alt="google_play_best_of_2014.png"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+<h3 id="download-starter">Download Starter</h3>
+<ul>
+<li>Download Starter とは<br>TERRA BATTLEのダウンロード数に応じて、アーティスト参戦、ゲームの新モード追加、コンサート開催、本・フィギュアの制作が開始されるプロジェクトです。<br><a href="http://www.terra-battle.com/jp/downloadstarter/">http://www.terra-battle.com/jp/downloadstarter/</a><br>　<ul>
+<li>プロモーションの一環</li>
+<li>各分野のプロが集まるので、各分野好きな人の注目を集める<ul>
+<li>漫画好き</li>
+<li>アニメ好き</li>
+<li>音楽好き</li>
+<li>ゲーム好き</li>
+<li>フィギュア好き</li>
+<li>アート好き</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://www.terra-battle.com/assets/terra-battle/img/chara_world01.png" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h3 id="-2014-12-14-">ユーザー評価（2014年12月14日時点）</h3>
+<p><img src="http://nobon.me/wp-content/uploads/2013/04/20110826_2151425.gif" alt=""><br>　<br><img src="http://i.imgur.com/G2wfp7Z.png" alt="review_ios.png"></p>
+<hr>
+<p><img src="http://fc02.deviantart.net/fs70/f/2012/068/d/3/google_play_logo_by_silviu_eduard-d4s7k51.png" alt=""><br>　<br><img src="http://i.imgur.com/X0S3gP2.png" alt="review_andriod.png"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h3 id="app-annie-2014-10-9-2014-12-13-">App Annie（2014年10月9日～2014年12月13日）</h3>
+<p><img src="https://static-s.appstc.com/media/pictures/annie-logo.png" alt=""></p>
+<ul>
+<li><p>iPhone</p>
+<ul>
+<li>ダウンロードランキング<br>  <img src="http://i.imgur.com/zCFuupB.png" alt="appAnnie_iPhone_download_ranking"></li>
+<li>売上ランキング<br>  <img src="http://i.imgur.com/URhAOyo.png" alt="appAnnie_iPhone_sale_ranking"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+<li><p>Android</p>
+<ul>
+<li>ダウンロードランキング<br>  <img src="http://i.imgur.com/bq4yLae.png" alt="appAnnie_andriod_download_ranking"></li>
+<li>売上ランキング<br>  <img src="http://i.imgur.com/j8DC5o6.png" alt="appAnnie_andriod_sale_ranking"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+<li><p>iPad</p>
+<ul>
+<li>ダウンロードランキング<br>  <img src="http://i.imgur.com/uUSw2xV.png" alt="appAnnie_iPad_download_ranking"></li>
+<li>売上ランキング<br>  <img src="http://i.imgur.com/0yvg2rQ.png" alt="appAnnie_iPad_sale_ranking"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+<h2 id="-">ゲームシステム</h2>
+<h3 id="-">公式サイト</h3>
+<ul>
+<li>「キャラクターを自由に動かし、挟撃せよ」<br><iframe width="640" height="360" src="http://www.youtube.com/embed/mF06LDonctc?rel=0&vq=hd1080" frameborder="0"></iframe><br><br></li>
+<li>「仲間との『連鎖』で一網打尽」<br><iframe width="640" height="360" src="http://www.youtube.com/embed/dNcmY5zE4gk?rel=0&vq=hd1080" frameborder="0"></iframe><br><br></li>
+<li>「ジョブとスキルによる戦略的カスタマイズ」<br><iframe width="640" height="360" src="http://www.youtube.com/embed/wi1ObHzGjKU?rel=0&vq=hd1080" frameborder="0"></iframe><br><br></li>
+<li>「広がる世界と、数百の戦場マップ、数百の敵味方キャラクター」<iframe width="640" height="360" src="http://www.youtube.com/embed/uRwQFn0xXyU?rel=0&vq=hd1080" frameborder="0"></iframe>
+
+</li>
+</ul>
+<p><img src="http://www.terra-battle.com/assets/terra-battle/img/chara_system.png" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h3 id="-">非公式</h3>
+<ul>
+<li>配信されてから毎日プレイしている<br><img src="http://i.imgur.com/hDsj6Iu.png" alt="info.PNG"><br><br></li>
+<li>キャラクターリスト<br><img src="http://i.imgur.com/FAjGAgm.png" alt="chara_list.PNG"><br><br></li>
+<li>キャラクターパラメータ<br><img src="http://i.imgur.com/kyvGzw7.png" alt="chara_parameter_1.PNG"><br><br><br><img src="http://i.imgur.com/njpck7Y.png" alt="chara_parameter_2.PNG"><br><br><br><img src="http://i.imgur.com/tNIFgaG.png" alt="chara_parameter_3.PNG"><br><br></li>
+<li>キャラクター属性<br><img src="http://i.imgur.com/h7QLypn.png" alt="attribute.PNG"><br><br></li>
+<li>キャラクタープロフィール<br><img src="http://i.imgur.com/gCwjvlz.png" alt="chara_profile_1.PNG"><br><br><br><img src="http://i.imgur.com/xIxtPxk.png" alt="chara_profile_2.PNG"><br><br></li>
+<li>キャラ間の関係性<br><img src="http://i.imgur.com/MQyrrDa.png" alt="chara_profile_3.PNG"><br><br><br><img src="http://i.imgur.com/oxMQBfW.png" alt="chara_profile_4.PNG"><br><br></li>
+<li>デイリーイベント<br><img src="http://i.imgur.com/sU9ONdI.png" alt="daily_event.PNG"><br><br><br><img src="http://i.imgur.com/2GRQWms.png" alt="daily_event_schedule.PNG"><br><br></li>
+<li>イベント<br><img src="http://i.imgur.com/turmF4x.png" alt="event.PNG"><br><br></li>
+<li>カプセル<br><img src="http://i.imgur.com/20c1LfR.png" alt="capsule.PNG"> </li>
+</ul>
+<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h2 id="-">制作陣</h2>
+<p><img src="http://www.4gamer.net/games/263/G026384/20140916074/SS/003.jpg" alt=""><br><br><br><img src="http://www.famitsu.com/images/000/056/447/l_53b398b35ae84.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h3 id="-">プロデューサー　坂口博信</h3>
+<p><img src="http://www.famitsu.com/images/000/056/447/l_53b3969bc1930.jpg" alt=""></p>
+<ul>
+<li>経歴<ul>
+<li>52歳</li>
+<li>『ファイナルファンタジーシリーズ』の生みの親</li>
+<li>高校ではミュージシャンを目指していた</li>
+<li>横浜国立大学工学部電子情報工学科中退</li>
+<li>1986年、株式会社スクウェア設立。取締役企画・開発部長に就任</li>
+<li>1991年、同社代表取締役副社長に就任。開発部門を統括する立場となる</li>
+<li>1995年、Square LA,Inc（後にSquareUSA,Inc）取締役社長兼任</li>
+<li>2003年にスクウェアを退社。以後独立し、株式会社ミストウォーカー代表取締役に就任する</li>
+<li>2005年7月、 GDCで生涯功労者賞（Hall of Fame Award）を受賞<ul>
+<li>AIAS、互动艺术与科学学会</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>代表作<ul>
+<li>スクウェア時代<ul>
+<li>ファイナルファンタジI～V（1987年～1992年）ディレクター</li>
+<li>ファイナルファンタジVI～VII（1994年～1997年）プロデューサー</li>
+<li>ファイナルファンタジVII（1997年）シナリオ原案</li>
+<li>ファイナルファンタジVIII～X（1999年～2001年）エグゼクティブプロデューサー</li>
+<li>ファイナルファンタジー　映画（2001年）原作、監督、製作</li>
+</ul>
+</li>
+<li>ミストウォーカー<ul>
+<li>ブルードラゴン（2006年）制作総指揮、プロデューサー、シナリオ</li>
+<li>ロストオデッセイ（2007年）制作総指揮、プロデューサー、シナリオ</li>
+<li>ラストストーリー（2011年）ディレクター、シナリオ</li>
+<li>Party Wave（2012年）</li>
+<li>Blade Guardian（2012年）</li>
+<li>TERRA BATTLE（2014年）プロデューサー、シナリオ<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="-">ディレクター＆プログラマー　大野浩司</h3>
+<p><img src="http://www.4gamer.net/games/263/G026384/20141201037/TN/003.jpg" alt=""></p>
+<ul>
+<li>代表作<ul>
+<li>ファイナルファンタジX-2</li>
+<li>ファイナルファンタジXI　3Dマップエンジン＆物理シミュレーション<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+<h3 id="-">ゲームデザイン　西村有紀</h3>
+<ul>
+<li>スクウェア時代、“エクセルの魔術師”として活躍してもらった。非常に緻密で大量のRPGデータを構築。<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+<h3 id="-">キャラクターデザイン　藤坂公彦</h3>
+<p><img src="http://www.mistwalkercorp.com/about/assets_c/2014/06/fujisaka-thumb-200xauto-549.jpg" alt=""></p>
+<ul>
+<li>代表作<ul>
+<li>ドラッグオンドラグーン キャラクターデザイン</li>
+<li>ドラッグオンドラグーン2 封印の紅、背徳の黒 キャラクターデザイン</li>
+<li>ドラッグオンドラグーン3 キャラクターデザイン</li>
+<li>ラストストーリー キャラクターデザイン<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+<h3 id="-">音楽　植松伸夫</h3>
+<p><img src="http://userserve-ak.last.fm/serve/_/49556055/uematsu.jpg" alt=""></p>
+<ul>
+<li>経歴<ul>
+<li>55歳</li>
+<li>12歳のときにピアノを始める</li>
+<li>神奈川大学外国語学部英文学科卒業</li>
+<li>坂口博信に「これから一緒に会社を大きくしないか」と誘われ、1986年、株式会社スクウェア（現スクウェア・エニックス）に入社</li>
+<li>1999年、フェイ・ウォンをフィーチャーし、自身が作曲・プロデュースを担当した『FFVIII』のテーマ曲「Eyes On Me」は50万枚のセールスを記録。オリコンシングルチャート最高9位（洋楽チャートでは19週連続1位）、第14回日本ゴールドディスク大賞で、ゲーム音楽では初の「ソング・オブ・ザ・イヤー」（洋楽部門）を受賞した。</li>
+<li>2003年2月、バンド「THE BLACK MAGES」を結成</li>
+<li>2004年10月末をもってスクウェア・エニックスを退社。新会社「SMILEPLEASE」を設立する。</li>
+<li>2007年10月、『FF』20周年を記念した国際コンサートツアー「Distant Worlds: music from FINAL FANTASY」を開催する（3年で24ヶ所）</li>
+</ul>
+</li>
+<li>代表作<ul>
+<li>ファイナルファンタジI～XII　音楽</li>
+<li>ファイナルファンタジXIV　音楽</li>
+<li>ブルードラゴン　音楽</li>
+<li>ロストオデッセイ　音楽</li>
+<li>ラストストーリー　音楽<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+<h2 id="-">ゲーム開発裏話</h2>
+<h3 id="-">ネット記事</h3>
+<ul>
+<li><strong>2014/07/08</strong>　『テラバトル』坂口博信氏が本気で挑むスマートフォン向けRPG！　開発の経緯から今後の野望まで、坂口氏が語る！【インタビュー】<ul>
+<li><a href="http://www.famitsu.com/news/201407/08056447.html">http://www.famitsu.com/news/201407/08056447.html</a></li>
+</ul>
+</li>
+<li><strong>2014/09/20</strong>　坂口博信氏がスマホ向けRPG「TERRA BATTLE」に取り組む理由とは。開発の経緯からゲームの内容，プロモーション，今後の展望までズバリ聞いてみた<ul>
+<li><a href="http://www.4gamer.net/games/263/G026384/20140916074/">http://www.4gamer.net/games/263/G026384/20140916074/</a></li>
+</ul>
+</li>
+<li><strong>2014/10/09</strong>　【独占コメント付き】坂口博信氏最新作『テラバトル』配信開始<ul>
+<li><a href="http://app.famitsu.com/20141009_453273/">http://app.famitsu.com/20141009_453273/</a></li>
+</ul>
+</li>
+<li><strong>2014/10/18</strong>　これが坂口博信氏による“スマホ時代の本格RPG”だ。「TERRA BATTLE」プレイレポート<ul>
+<li><a href="http://www.4gamer.net/games/263/G026384/20141016098/">http://www.4gamer.net/games/263/G026384/20141016098/</a></li>
+</ul>
+</li>
+<li><strong>2014/11/19</strong>　テラバトル ガチャ禁止縛り まとめ＆感想<ul>
+<li><a href="http://www.famitsu.com/cominy/?m=pc&amp;a=page_fh_diary&amp;target_c_diary_id=88944">http://www.famitsu.com/cominy/?m=pc&amp;a=page_fh_diary&amp;target_c_diary_id=88944</a></li>
+</ul>
+</li>
+<li><strong>2014/11/22</strong>　FFシリーズ生みの親が手がけた『テラバトル』が異例のヒット<ul>
+<li><a href="http://nikkan-spa.jp/752192">http://nikkan-spa.jp/752192</a></li>
+</ul>
+</li>
+<li><strong>2014/12/05</strong>　モバイルでゲームは少人数開発へ回帰するのか。「TERRA BATTLE」開発座談会レポート。え，プログラマも各デザイナーも1人ずつ？<ul>
+<li><a href="http://www.4gamer.net/games/263/G026384/20141201037/">http://www.4gamer.net/games/263/G026384/20141201037/</a></li>
+</ul>
+</li>
+<li><strong>2014/12/09</strong>　【テラバトル】130万DL突破！ iPhone、Androidの両方で今年のベストゲームに選出<ul>
+<li><a href="http://app.famitsu.com/20141209_473772/">http://app.famitsu.com/20141209_473772/</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+<h3 id="-"><strong>テラバトルを制作したきっかけ</strong></h3>
+<h4 id="-">最初は色々作った</h4>
+<ul>
+<li><p>バレエダンサーの娘が、ステージを荒らすモンスターと戦いながら踊るというゲーム<br>  <img src="http://www.famitsu.com/images/000/056/447/l_53b396cac0b38.jpg" alt=""><br><br><br>  <img src="http://www.famitsu.com/images/000/056/447/l_53b396c4f157c.jpg" alt=""></p>
+<ul>
+<li>娘がジャズダンスをやっていて、娘と一緒にバレエを観にいたのがきっかけ</li>
+<li>スタッフみんなでパリのオペラ座に行ってバレエを研究した<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+<li><p>紙芝居のような、二次元の影絵風世界で、本と戦うゲーム。<br>  <img src="http://www.famitsu.com/images/000/056/447/l_53b396c70dc8d.jpg" alt=""><br><br><br>  <img src="http://www.famitsu.com/images/000/056/447/l_53b396c8e610c.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+</li>
+<li><p>スーパーファミコンのころの『FF』のようなバトルで、召喚をメインに戦うゲーム<br>  <img src="http://www.famitsu.com/images/000/056/447/l_53b396cc81b5b.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+</li>
+</ul>
+<h4 id="-">パズル＆ドラゴンズ</h4>
+<ul>
+<li><p>「タップするだけでしょ」と，スマートフォン向けゲームをどこかバカにしていた<br>  <img src="http://www.4gamer.net/games/263/G026384/20140916074/TN/002.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+</li>
+<li><p>「パズル＆ドラゴンズ」プロデューサーの山本大介さんと飲む機会があった<br>  <img src="http://www.4gamer.net/games/263/G026384/20140916074/TN/003.jpg" alt=""></p>
+<ul>
+<li>田中弘道氏、坂口さんの大学の同級生<br>  <img src="http://upload.wikimedia.org/wikipedia/commons/6/64/Hiromichi_Tanaka_E3_06.jpg" alt=""><ul>
+<li>1998年 スクウェア執行役員</li>
+<li>スクウェア・エニックス 第3開発事業部部長、オンライン事業推進担当</li>
+<li>2012年7月　スクウェア・エニックス　退社</li>
+<li>現在　ガンホー・オンライン・エンターテイメント　顧問<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>「パズドラ」で認識が変わった。スマートフォン向けにRPGを作ってみようと考えたキッカケ</p>
+<ul>
+<li>パズドラと「ドラゴンクエストモンスターズ スーパーライト」かなりのお金を注ぎ込んでプレイした<br><img src="http://www.4gamer.net/games/263/G026384/20140916074/TN/001.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+<li><p>挟撃バトルのヒントになったのは</p>
+<ul>
+<li>「挟み将棋」<br><img src="http://androck.jp/wp-content/uploads/Appli/apps/SS/3632_4.jpg" alt=""><br><br></li>
+<li>Apple II 「Archon」<br><img src="https://i1.ytimg.com/vi/MMvXLiUTAKI/hqdefault.jpg" alt=""><br><img src="http://i.ytimg.com/vi/QUziMj4kZ24/hqdefault.jpg" alt=""><br><img src="http://www.pegasoft.ca/history/archon/archon_box_back.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+<li><p>操作</p>
+<ul>
+<li><strong>パズドラの「タッチして動かしながら，場所を入れ替えて形を作っていく」という操作が，（スマホでゲームを遊ぶ）ほとんどの人に認知されたものであると割り切った</strong><br><img src="http://dengekionline.com/elem/000/000/834/834103/pdbt_03_cs1w1_1280x720.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+<h4 id="-">ターゲット</h4>
+<ul>
+<li><strong>コアユーザー向けのタイトルが少ないから、あえて狙うのが面白い</strong></li>
+<li><strong>うまくいかなかった場合は「そういうゲーマーは少ない」という業界の指標にもなるので，ポジティブに考えればそれもアリかなと</strong></li>
+<li><strong>売れるゲームというよりも、僕とチームスタッフの作りたいゲームを作った</strong><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+<h3 id="-"><strong>ダウンロードスターター</strong></h3>
+<p><img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/10848504_822979887744478_9121678914787116911_o.jpg" alt=""><br><br></p>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/gdQUzw705lI?rel=0&vq=hd1080" frameborder="0"></iframe>
+
+<ul>
+<li>ヒント<ul>
+<li>「SDKを組み込んで広告バナーの絵を変えたら，ダウンロード数が伸びた」</li>
+<li>クラウドファンディングのKickstarter</li>
+</ul>
+</li>
+<li>これから<ul>
+<li>鳥山明</li>
+<li>井上雄彦</li>
+<li>天野喜孝<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+<h3 id="-"><strong>逸話</strong></h3>
+<ul>
+<li>RPGということでデータ量が多く、1年くらいかかってしまいました</li>
+<li>開発チームは少人数ですから。坂口の担当範囲はほぼ全部</li>
+<li>コアスタッフ7人、意思疎通が早くて気持ちいい、喧嘩をするとたいへんです</li>
+<li>言い合いが怒鳴りあいになって、レストランの人に怒られた<ul>
+<li>｢そもそも坂口さんのアイデアがよくないんじゃないの？｣、｢はぁ？　操作まわりが悪いからだろ！｣なんて、よくやっています(笑)</li>
+</ul>
+</li>
+<li>「ラインを増やしてミストウォーカーを大きくするぞ！」という野望はなく，むしろ小規模なままにしておきたい<br><img src="http://www.4gamer.net/games/263/G026384/20140916074/SS/039.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+<h3 id="-"><strong>ゲームデザイン</strong></h3>
+<ul>
+<li>無課金でもクリアできるように、ゲームデザインをしている<ul>
+<li>2014/11/19　テラバトル ガチャ禁止縛り まとめ＆感想<ul>
+<li><a href="http://www.famitsu.com/cominy/?m=pc&amp;a=page_fh_diary&amp;target_c_diary_id=88944">http://www.famitsu.com/cominy/?m=pc&amp;a=page_fh_diary&amp;target_c_diary_id=88944</a></li>
+<li>ガチャ無しでクリア！</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ガチャの設定も甘めにしている<ul>
+<li>「艦隊これくしょん -艦これ-」と似ている</li>
+<li>「艦隊これくしょん -艦これ-」プロデューサー　田中謙介<ul>
+<li>スクウェア時代から僕と一緒に仕事をしていた</li>
+<li>ミストウォーカーに在籍したこともある<br><img src="http://www.4gamer.net/games/263/G026384/20140916074/SS/033.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="-"><strong>開発</strong></h3>
+<ul>
+<li><p>坂口：プログラマーの大野（<strong>大野浩司</strong>氏）が非常に腕の立つ人材で，<strong>通常3～4人がかりになるところを1人でやっちゃった</strong>んです。<br>  <img src="http://www.4gamer.net/games/263/G026384/20141201037/TN/003.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+</li>
+<li><p>開発体制</p>
+<ul>
+<li>Unity開発</li>
+<li>プログラマー（サーバーも含めて）、企画／ゲームデザイナー、キャラクターデザイナー一人ずつ</li>
+<li>少人数での開発なので，意志決定が速い</li>
+<li>2013年の6月開発開始（開発期間：1年4ヶ月）</li>
+<li>初めてサーバープログラミングなので、経験者にいろいろ聞いた</li>
+<li>デバッグきちんとやったので、配信後、大きいな障害がなかった</li>
+<li>坂口（坂口博信氏）が，ああしたい，こうしたいというリクエストをメールで送ってきます。それを読んで「じゃあ，どうしようか」と考えて作り，坂口に見せる</li>
+<li>エフェクトはUnityのShuriken</li>
+<li>Excelキャラクターパラメータ調整、ExcelのデータをUnityに読み込んで動作確認</li>
+<li>AssetBundleかなり苦労した</li>
+<li>NGUI＆アプリ内課金プラグイン、工数削減できた</li>
+<li>敵が倒された時のエフェクトはPixelShader</li>
+<li>バックエンドサーバーにGoogle App Engineを採用する</li>
+<li>SVN管理</li>
+<li>JavaScriptで，敵を動かすAIのスクリプトを書いた</li>
+<li>ボスのAIはそれぞれ専用で作っている</li>
+<li>動画共有サービス一週間で実装</li>
+<li>Instantiateが遅いから、シーンがひとつしかない。シーン遷移なし</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://www.4gamer.net/games/263/G026384/20141201037/SS/031.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<ul>
+<li>教訓<ul>
+<li>プログラマ1人の体制では二度とゲーム開発をしたくない</li>
+<li>全体に人員不足だった。</li>
+<li>あの体制では二度とやりたくないです</li>
+<li>プログラマーが多すぎるとミーティングばかりになるので、2～3人がちょうどいい</li>
+<li>1人でプログラムを書いていたので，コメントやリファクタリングなどの整理を怠ってしまった</li>
+<li>課金周りはいちいちサーバー側に問い合わせなければいけないのが面倒。クライアント側でやっちゃえばいいんじゃない。<ul>
+<li>開発を始めた当初は，そんなレベルだった</li>
+</ul>
+</li>
+<li>本格的にサーバーを導入しようとすると、やっぱりきちんと経験のある人に任せたほうがいい</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://www.4gamer.net/games/263/G026384/20140916074/SS/032.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<ul>
+<li>貫いたこと（坂口説）<ul>
+<li>「自分達でも収拾が付けられないような作り方をしたら，結果として面白いものができる」</li>
+<li>「理路整然とデータ化してしまうと，それ以上のものにはならない」</li>
+<li>「<strong>もっとぐちゃぐちゃにしないとダメだ</strong>」<br><img src="http://www.4gamer.net/games/263/G026384/20140916074/SS/036.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+<h2 id="-"><strong>イベント</strong></h2>
+<h3 id="-">ネット記事</h3>
+<ul>
+<li><strong>2014/11/28</strong>　「ファイナルファンタジー」シリーズの生みの親として知られる“RPGの巨匠”が語る 最新作「テラバトル」の開発秘話、ゲーム業界の未来とは？<ul>
+<li><a href="http://www.sankei.com/economy/news/141128/prl1411280080-n1.html">http://www.sankei.com/economy/news/141128/prl1411280080-n1.html</a></li>
+</ul>
+</li>
+<li><strong>2014/12/04</strong>　「ファイナルファンタジー」「テラバトル」などのヒット作を生み出し続ける坂口博信氏がゲーム制作の真髄を語った特別講演をレポート<ul>
+<li><a href="http://www.gamer.ne.jp/news/201412040010/">http://www.gamer.ne.jp/news/201412040010/</a></li>
+</ul>
+</li>
+<li><strong>2014/12/10</strong>　Apple Store銀座に坂口＆植松コンビが登場！『テラバトル』の協力プレイ、召喚獣、新キャラ情報も公開<ul>
+<li><a href="http://app.famitsu.com/20141210_474287/">http://app.famitsu.com/20141210_474287/</a></li>
+</ul>
+</li>
+<li><strong>2014/12/11</strong>　スマホアプリがゲーム業界にもたらした変化とは？ 坂口博信氏と植松伸夫氏によるトークイベント「Meet the Developer」をレポート<ul>
+<li><a href="http://www.4gamer.net/games/263/G026384/20141211082/">http://www.4gamer.net/games/263/G026384/20141211082/</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+</ul>
+</li>
+</ul>
+<h3 id="hal-">HAL東京</h3>
+<ul>
+<li>HAL東京 ゲーム学部の学生約400人に向けて特別講演</li>
+</ul>
+<p><img src="http://image.gamer.ne.jp/news/2014/20141204/00103fbf1eb410c7194c4b0e3223165a7736/o/1.jpg" alt=""></p>
+<ul>
+<li>抜粋<ul>
+<li>大学時代<ul>
+<li>高校時代の坂口氏は、ミュージシャンになりたかった</li>
+<li>大学に入学した頃には、目的を見失っていた</li>
+<li>NEC産のPCに夢中</li>
+<li>田中弘道（ガンホー顧問）と大学に行かず、ゲームに明け暮れる廃人生活を送っていた</li>
+<li>ソフトウェア制作会社に入りたかったが、技術素人なので、就活失敗</li>
+<li>最後、アルバイトで「スクウェア」に入った。応募した理由は「すごく弱小メーカーっぽいし、ここならいけそう！」だったそうだ。</li>
+</ul>
+</li>
+<li>母から<ul>
+<li>目標を1本に絞るだけでなく、できるだけ複数の選択肢を用意しておくことを心がけている</li>
+</ul>
+</li>
+<li>ナーシャ・ジベリ<br>  <img src="http://upload.wikimedia.org/wikipedia/commons/9/99/Nasir_Gebelli.jpg" alt=""><br>  <a href="http://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%BB%E3%82%B8%E3%83%99%E3%83%AA">http://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%BB%E3%82%B8%E3%83%99%E3%83%AA</a><ul>
+<li>天才プログラマー</li>
+<li>『ファイナルファンタジー』の機械語をすべて暗記してしまっていたというほどの逸材</li>
+<li>とある日に仕事場のビザが尽きたがために帰国しようとするナーシャ氏。坂口氏が「ちょっと待て、バグ残ってるんだから！」とかなり必死で止めたようだが、そんな言葉もお構いなしにナーシャ氏は「256行目のLBAをROPにしてごらん？」と坂口氏に説明。指示通りに修正するとバグが解消されたとのことだ。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://image.gamer.ne.jp/news/2014/20141204/00103fbf1eb410c7194c4b0e3223165a7736/o/25.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h3 id="meet-the-developer">Meet the Developer</h3>
+<ul>
+<li>Apple Store銀座に坂口＆植松コンビが登場！</li>
+</ul>
+<p><img src="http://www.4gamer.net/games/263/G026384/20141211082/SS/002.jpg" alt=""></p>
+<p><img src="https://scontent-a.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1517577_1004252156267309_7769734109365673287_n.jpg?oh=d6b3f9268826cfe18c32a8da0bb2f0d0&amp;oe=553B8C0E" alt=""></p>
+<ul>
+<li>抜粋<ul>
+<li>立ち見がでるほどの超満員</li>
+<li>一瞬で世界中に配信できることが「大きな驚きだった」（坂口）<ul>
+<li>国の項目にチェックを入れるだけでリリースなんて，当時（ファミコン時代）からすれば信じがたいことである。</li>
+</ul>
+</li>
+<li>App Storeへの配信ボタンを押した際は「涙が出た」</li>
+<li>「コンシューマ的な作り方をしている」にも関わらず、ダウンロード数の早さは予想外だった（坂口）</li>
+<li>コンシューマライクなスマホRPGがヒットするのは、（今後のスマホゲームに）可能性を感じる（植松）</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://www.4gamer.net/games/263/G026384/20141211082/SS/005.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<ul>
+<li>抜粋<ul>
+<li>「なぜFF（ファイナルファンタジー）はここまで大きな作品になったのか」<ul>
+<li>「指導者がいなくて、“モノを作りたい”という自分たちの熱で好き勝手に作れた」</li>
+<li>「当時は世界的な作品になるとは思っていなかった」</li>
+</ul>
+</li>
+<li>「PARTY WAVE」というスマホゲームでは，僕が8割がた曲を作っている（坂口）</li>
+<li>未来のクリエイターへのメッセージ<ul>
+<li>詰まったときはタバコ部屋やリフレッシュルームに行くといいと思いますよ。そこにはチームや業種が違う人が集まっているので，そこで話を聞いてみてください。みんな「もの作り」だけに目が向いちゃうけど，それと同じくらい<strong>重要なのは，実はコミュニケーションだ</strong>と思います。（坂口）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://www.4gamer.net/games/263/G026384/20141211082/SS/008.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h2 id="-">今後の展開</h2>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/FJrpoaUuFkY?rel=0&vq=hd1080" frameborder="0"></iframe>
+
+<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h3 id="-">協力モード開発開始</h3>
+<h3 id="-">対戦モード開発開始</h3>
+<h3 id="-">召喚獣システム実装開始</h3>
+<h3 id="-">戦闘シーンの攻撃イラストの制作開始</h3>
+<h3 id="-">攻略本制作開始</h3>
+<h3 id="-">コンサート開催</h3>
+<h3 id="-">世界観アートブック制作開始</h3>
+<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h3 id="140-">140万ダウンロード、フィギュア制作開始</h3>
+<h3 id="150-">150万ダウンロード、松野泰己さんシナリオ参戦</h3>
+<h3 id="150-">150万ダウンロード、天野喜孝さん参戦</h3>
+<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h3 id="200-">200万ダウンロード、コンシューマー版の開発開始</h3>
+<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<p><img src="http://i.imgur.com/4kxbg9H.png" alt="console.png"><br><br><br><strong>坂口氏：3DグラフィックスのMMORPGをやってみたい</strong><br><br><br><strong>大野氏：コンシューマはUnityでさすがにない</strong><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h2 id="-">サイト</h2>
+<ul>
+<li>公式サイト<ul>
+<li><a href="http://www.terra-battle.com/jp/">http://www.terra-battle.com/jp/</a></li>
+</ul>
+</li>
+<li>公式攻略サイト<ul>
+<li><a href="http://wiki.famitsu.com/terrabattle/">http://wiki.famitsu.com/terrabattle/</a></li>
+</ul>
+</li>
+<li>iOS版ダウンロード<ul>
+<li><a href="https://itunes.apple.com/jp/app/terra-battle/id888628623">https://itunes.apple.com/jp/app/terra-battle/id888628623</a></li>
+</ul>
+</li>
+<li>Android版ダウンロード<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.mistwalkercorp.guardians">https://play.google.com/store/apps/details?id=com.mistwalkercorp.guardians</a></li>
+</ul>
+</li>
+<li>MIST WALKER<ul>
+<li><a href="http://www.mistwalkercorp.com/jp/">http://www.mistwalkercorp.com/jp/</a></li>
+</ul>
+</li>
+</ul>
+<p><img src="http://www.terra-battle.com/assets/terra-battle/img/bg_world.jpg" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h2 id="metal-gear-online-tactical-team-operations">METAL GEAR ONLINE - TACTICAL TEAM OPERATIONS</h2>
+<p><img src="http://www.konami.jp/mgs5/tpp/jp/online/_img/mgo_ti.jpg" alt=""><br><a href="http://www.konami.jp/mgs5/tpp/jp/online/">http://www.konami.jp/mgs5/tpp/jp/online/</a></p>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/HXzTt3-46J4?rel=0&vq=hd1080" frameborder="0"></iframe>
+
+<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h2 id="final-fantasy-xv">FINAL FANTASY XV</h2>
+<p><img src="http://www.jp.square-enix.com/ff15/_assets/images/bg.jpg" alt=""><br><a href="http://www.jp.square-enix.com/ff15/">http://www.jp.square-enix.com/ff15/</a></p>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/r2Ssv2MkAaU?rel=0&vq=hd1080" frameborder="0"></iframe>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
